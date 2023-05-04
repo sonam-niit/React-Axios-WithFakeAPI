@@ -14,7 +14,7 @@ export function Details(){
 
     useEffect(()=>{
         getUserDetails()
-    },[])
+    })
 
     return(
         <div>
