@@ -1,6 +1,7 @@
 import './App.css';
 import { BrowserRouter, Link, Routes, Route } from 'react-router-dom';
 import { UserList } from './components/userlist';
+import { Details } from './components/details';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         </ul>
         <Routes>
           <Route path="/userlist" element={<UserList />}></Route>
+          <Route path="/details/:id" element={<Details />}></Route>
         </Routes>
       </BrowserRouter>
 
